@@ -5,6 +5,7 @@ export const GifExpertApp = () => {
     const [categories, setCategories] = useState(['Yellowston']);
 
     const onAddCategory = (categorie) => {
+        console.log("aqui")
         if (categories.includes(categorie)) return
         setCategories([categorie, ...categories])
     }
